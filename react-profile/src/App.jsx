@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./styles.css";
 
 export default function App() {
-  const [bio, setBio] = useState("Hello all who visit this page my name is Francisco. I am first and foremost a proud husband to an amazing women and a proud father to two boys that are my whole world. I'm a dedicated and enthusiastic learner on a journey to becoming a skilled software developer. My passion for coding and problem-solving ignited my curiosity and led me to dive headfirst into the world of software development. As I navigate through various coding languages and frameworks, I'm fueled by the excitement of acquiring new skills and applying them to real-world projects. With a creative mindset and an eagerness to learn, I'm committed to honing my expertise in both front-end and back-end development. Every challenge I encounter is an opportunity for growth, and every line of code I write is a step towards achieving my goal of becoming a proficient developer.  ");
+  const [bio,] = useState("Hello all who visit this page my name is Francisco. I am first and foremost a proud husband to an amazing women and a proud father to two boys that are my whole world. I'm a dedicated and enthusiastic learner on a journey to becoming a skilled software developer. My passion for coding and problem-solving ignited my curiosity and led me to dive headfirst into the world of software development. As I navigate through various coding languages and frameworks, I'm fueled by the excitement of acquiring new skills and applying them to real-world projects. With a creative mindset and an eagerness to learn, I'm committed to honing my expertise in both front-end and back-end development. Every challenge I encounter is an opportunity for growth, and every line of code I write is a step towards achieving my goal of becoming a proficient developer.  ");
   
   return (
     <div className="profile-container">
@@ -18,9 +18,7 @@ export default function App() {
       </div>
       <div className="bio">
         <p>{bio}</p>
-        <button onClick={() => setBio("insert fun facts")}>
-          Click here for fun facts about me!
-        </button>
+        
       
       {/* Add more sections like work experience, education, skills, etc. */}
       <div className="work-section">
@@ -32,12 +30,14 @@ export default function App() {
             className="work-example"
            width="500"
           />
+          <p>The picture above is a screen shot of a app I created that will find you the best place to live!  </p>
           <img 
             src="../public/Ultimate PokeDex project.png"
             alt="Example Work 2"
             className="work-example"
             width="500"
           />
+          <p>this project I work along side two other collaborators and we built a pokemon app that allows you to build your own team</p>
           {/* Add more examples of your work */}
         </div>
       </div>
